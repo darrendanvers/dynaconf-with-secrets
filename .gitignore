@@ -1,0 +1,11 @@
+# PyCharm
+.idea/
+
+# macOS directory metadata
+.DS_Store
+
+# Python virtual environment
+venv/
+
+# Contains the secret used to decrypt properties
+.secret

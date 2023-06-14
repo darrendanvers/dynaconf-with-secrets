@@ -1,0 +1,8 @@
+development:
+  secret: "ENC(gAAAAABkh7rOZ01wA31XCdcdD-OffsH7N2-3sCy1vD0bYlDXzjlZAqI28pKdSbY5z-OS0NkUHycekL2c6POaHPcycg9FhyzfeQ==)"
+  app:
+    property: "in test environment"
+production:
+  secret: "ENC(gAAAAABkh7rOZ01wA31XCdcdD-OffsH7N2-3sCy1vD0bYlDXzjlZAqI28pKdSbY5z-OS0NkUHycekL2c6POaHPcycg9FhyzfeQ==)"
+  app:
+    property: "not in test environment"
