@@ -42,12 +42,12 @@ def enc_with_key(key, value):
     :param value: The value to encrypt.
     :return: The encrypted value.
     """
-    if key is None:
+    if not key:
         return None
 
-    f = Fernet(key)
-    c = f.encrypt(bytes(value, ENCODING))
-    return f"ENC({c.decode(ENCODING)})"
+    fenret = Fernet(key)
+    cyper_text = fenret.encrypt(bytes(value, ENCODING))
+    return f"ENC({cyper_text.decode(ENCODING)})"
 
 
 def load(obj, env=None, silent=True, key=None, filename=None):
@@ -142,5 +142,5 @@ def _handle_prop(obj, decryption_key, key, value):
 
 # Decrypts a value.
 def _dec(key, value):
-    f = Fernet(key)
-    return f.decrypt(value)
+    fenret = Fernet(key)
+    return fenret.decrypt(value)
